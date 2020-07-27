@@ -16,7 +16,12 @@ const WhatShouldWeDo: React.FC = () => {
         </HeaderCenterSection>
         <Grids>
           {ListTutorial.map((tutorial, index) => (
-            <Grid title={tutorial.title} image={tutorial.image} index={index}>
+            <Grid
+              title={tutorial.title}
+              image={tutorial.image}
+              index={index}
+              key={index}
+            >
               {tutorial.description}
             </Grid>
           ))}
