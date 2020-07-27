@@ -1,8 +1,11 @@
 <h1 align="center">COVID-19 Landing Page</h1>
 
 <h1 align="center">
-  <img src="./.github/preview.jpg" alt="Preview" width="90%" />
+  <img src="./.github/preview.jpg" alt="Preview" width="90%" /><br />
 </h1>
+<p align="center">
+<a href="https://coronavirus-page.netlify.app/">Click here</a> to see a demo
+</p>
 
 # 📔 Summary
 
@@ -64,7 +67,7 @@ yarn start
 yarn build
 ```
 
-Your files is builded in folder `dist`
+Your files is builded in folder `build`
 
 # 🤔 How to contribute
 
