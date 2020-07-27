@@ -4,6 +4,7 @@ export default createGlobalStyle`
   :root{
     --primary-color:#FF383D;
     --secondary-color:#035755;
+    --secondary-light-color:#0C6C44;
     --gray-color:#4B4F51;
   }
 
@@ -175,6 +176,7 @@ export default createGlobalStyle`
     padding: 0.8rem 1.8rem;
     color: var(--primary-color);
     box-shadow:0px 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
 
     &:hover,
     &:focus,
