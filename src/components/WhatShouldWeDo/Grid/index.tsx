@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, ReactNode, useMemo } from "react";
 
 import { Container, Details, TitleContainer } from "./styles";
 
@@ -6,16 +6,20 @@ interface Props {
   title: string;
   image: string;
   index: number;
+  children?: ReactNode;
 }
 
 const Grid: React.FC<Props> = ({ title, index, image, children }) => {
+  const indexCount = useMemo<string>(
+    () => (index <= 9 ? `0${index + 1}` : String(index + 1)),
+    [index]
+  );
+
   return (
     <Container>
       <Details>
         <TitleContainer>
-          <div className="number">
-            {index <= 9 ? `0${index + 1}` : index + 1}
-          </div>
+          <div className="number">{indexCount}</div>
           <h2>{title}</h2>
         </TitleContainer>
         <p>{children}</p>
@@ -25,4 +29,4 @@ const Grid: React.FC<Props> = ({ title, index, image, children }) => {
   );
 };
 
-export default Grid;
+export default memo(Grid);

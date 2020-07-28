@@ -1,10 +1,11 @@
-import React from "react";
+import React, { memo, ReactNode } from "react";
 
 import { Container } from "./styles";
 
 interface Props {
   image: string;
   title: string;
+  children?: ReactNode;
 }
 
 const GridContagion: React.FC<Props> = ({ image, title, children }) => {
@@ -17,4 +18,4 @@ const GridContagion: React.FC<Props> = ({ image, title, children }) => {
   );
 };
 
-export default GridContagion;
+export default memo(GridContagion);
