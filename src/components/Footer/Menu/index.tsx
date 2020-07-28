@@ -9,9 +9,7 @@ const Header: React.FC = () => {
     <Container>
       <div>
         <a href="/">
-          <h1>
-            <img src={Logo} alt="Covid-19" />
-          </h1>
+          <img src={Logo} alt="Covid-19" />
         </a>
         <Menu>
           <ul>
