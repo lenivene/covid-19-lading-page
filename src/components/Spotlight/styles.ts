@@ -22,6 +22,21 @@ export const Container = styled.section`
     width: 76%;
     z-index: -1;
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    img {
+      position: relative;
+      width: 100%;
+      order: 0;
+      right: 0;
+    }
+  }
 `;
 
 export const Details = styled.div`

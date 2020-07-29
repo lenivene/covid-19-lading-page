@@ -18,6 +18,16 @@ export const Container = styled.li<ContainerProps>`
   &:nth-child(even) > img {
     order: -1;
   }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+      order: -1;
+    }
+  }
 `;
 
 export const Details = styled.div`
@@ -32,6 +42,14 @@ export const Details = styled.div`
     padding: 0.7rem 0;
     line-height: 28px;
     color: var(--gray-color);
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      margin-right: 15px;
+      margin-left: 15px;
+      font-size: 17px;
+    }
   }
 `;
 

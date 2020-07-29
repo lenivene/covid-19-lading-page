@@ -39,4 +39,29 @@ export const Container = styled.header`
       }
     }
   }
+
+  @media screen and (max-width: 992px) {
+    div {
+      flex-direction: column;
+      margin-top: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav > ul {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "menu menu"
+        "menu menu"
+        "contact contact";
+      grid-template-rows: auto;
+
+      li:last-child {
+        margin-top: 1.7rem;
+        grid-area: contact;
+        text-align: center;
+      }
+    }
+  }
 `;

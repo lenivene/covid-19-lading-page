@@ -19,6 +19,15 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 992px) {
+    > div {
+      flex-direction: column;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const Virus = styled.img`
@@ -36,4 +45,13 @@ export const Grids = styled.ul`
   grid-template-columns: auto auto auto;
   width: 100%;
   margin-top: 1.7rem;
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 4.7rem;
+    }
+  }
 `;

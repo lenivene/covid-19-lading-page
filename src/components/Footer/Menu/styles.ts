@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.footer`
   width: 100%;
 
   div {
@@ -13,6 +13,13 @@ export const Container = styled.header`
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    div {
+      flex-direction: column;
+      padding: 1.7rem;
+    }
   }
 `;
 
@@ -32,6 +39,12 @@ export const Menu = styled.nav`
         color: var(--primary-color);
         outline: none;
       }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    > ul {
+      margin: 0.7rem 15px;
     }
   }
 `;

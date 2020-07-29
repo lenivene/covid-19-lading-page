@@ -23,6 +23,21 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 992px) {
+    > div {
+      flex-direction: column;
+      margin-bottom: 4.7rem;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 export const Virus = styled.img`
